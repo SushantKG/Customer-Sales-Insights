@@ -7,15 +7,19 @@ This project gives sales insights of a hardware manufacturing company having ten
 
 ### Data Sources
 
-Sales data 
+Raw Data Source - db_dump.sql
 
 
 ### Tools
 
-- SQL server - Data Analysis
+- MY SQL - for conducting EDA
 - Power BI - Creating Interactive Dasahboard
 
 
 ### Steps
 
-
+- import the dataset to my sql workbench
+- Basic Data cleaning
+- Conduct EDA(exploratory data analysis)
+- Import this SQL database in Power BI
+- Create interactive Dashboards.
