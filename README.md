@@ -23,7 +23,7 @@ This project gives sales insights into a hardware manufacturing company from 201
 
 
 
---- Q1: Show total revenue in years 2017-2020 --
+### Q1: Show total revenue in years 2017-2020
 ```SQL
 SELECT d.year, SUM(t.sales_amount) AS Total_Revenue
 FROM transactions AS t
@@ -36,7 +36,7 @@ GROUP BY d.year;
 
 
 
--- Q2: Show revenue generated from each zone in 2020 --
+### Q2: Show revenue generated from each zone in 2020
 ```sql
 SELECT d.year, m.zone, SUM(t.sales_amount) AS Total_Revenue
 FROM transactions AS t
@@ -51,7 +51,7 @@ ORDER BY SUM(t.sales_amount)DESC;
 ![Screenshot 2023-12-19 121604](https://github.com/SushantKG/Customer-Sales-Insights/assets/152982735/9ba52e63-a1d8-488d-aa08-30618c24f2ff)
 
 
--- Q3: Show markets(City) present in diffrent zones --
+### Q3: Show markets(City) present in diffrent zones
 ```sql
 SELECT zone, markets_name AS City
 FROM markets
@@ -63,7 +63,7 @@ ORDER BY zone DESC;
 
 
 
--- Q4: Show total number of customers from each market(city)--
+### Q4: Show total number of customers from each market(city)
 ```sql
 SELECT  m.markets_name AS market, COUNT(distinct t.customer_code) AS No_of_Customers
 FROM transactions AS t
@@ -78,7 +78,7 @@ ORDER BY COUNT(distinct t.customer_code)DESC;
 
 
 
--- Q5: Show total revenue generated from each Market(city) in year 2020 --
+### Q5: Show total revenue generated from each Market(city) in year 2020
 ```sql
 SELECT d.year, m.markets_code, m.markets_name AS Market, SUM(sales_amount) AS Total_Revenue
 FROM transactions AS t
@@ -94,7 +94,7 @@ ORDER BY SUM(sales_amount)DESC;
 
 
 
--- Q6: Show total number of transactions in Delhi NCR in year 2020 (Delhi NCR market code is Mark004)--
+### Q6: Show total number of transactions in Delhi NCR in year 2020 (Delhi NCR market code is Mark004)
 ```sql
 SELECT d.year ,COUNT(*) 
 FROM transactions AS t
@@ -106,7 +106,7 @@ WHERE market_code= "Mark004" AND d.year=2020;
 
 
 
--- Q7: Show total revenue from Delhi NCR in year 2020 --
+### Q7: Show total revenue from Delhi NCR in year 2020
 ```sql
 SELECT d.year, SUM(sales_amount) AS revenue_Delhi_NCR
 FROM transactions AS t
@@ -119,7 +119,7 @@ GROUP BY d.year;
 
 
 
--- Q8: Which store generated highest revenue in Delhi NCR in year 2020 --
+### Q8: Which store generated highest revenue in Delhi NCR in year 2020
 ```sql
 SELECT d.year,c.custmer_name, SUM(sales_amount) AS Total_Revenue
 FROM transactions AS t
@@ -134,7 +134,7 @@ ORDER BY SUM(sales_amount)DESC;
 ![Screenshot 2023-12-19 125229](https://github.com/SushantKG/Customer-Sales-Insights/assets/152982735/7f053aa7-667f-401a-879c-9ef93b2cd365)
 
 
--- Q9: Show bestselling product codes from all stores in Delhi NCR in year 2020 --
+### Q9: Show bestselling product codes from all stores in Delhi NCR in year 2020
 ```sql
 WITH bestsellers AS
 (
@@ -154,7 +154,7 @@ SELECT * FROM bestsellers WHERE row_no = 1 ;
 ![Screenshot 2023-12-19 125359](https://github.com/SushantKG/Customer-Sales-Insights/assets/152982735/7956caaf-70fa-4e17-9fdf-4442ab6cfdfe)
 
 
--- 10: Which store generated highest revenue in Mumbai in year 2020 --
+### 10: Which store generated highest revenue in Mumbai in year 2020 
 ```sql
 SELECT d.year,c.custmer_name, SUM(sales_amount) AS Total_revenues
 FROM transactions AS t
@@ -170,7 +170,7 @@ LIMIT 5;
 ![Screenshot 2023-12-19 125448](https://github.com/SushantKG/Customer-Sales-Insights/assets/152982735/5f2c5dbe-13d0-4e2c-b96b-731f2e26d944)
 
 
--- Q11: Show bestselling product codes from all stores in Mumbai in year 2020 --
+### Q11: Show bestselling product codes from all stores in Mumbai in year 2020 
 ```sql
 WITH bestsellers AS
 (
