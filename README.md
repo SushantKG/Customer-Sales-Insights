@@ -15,6 +15,8 @@ This project gives sales insights into a hardware manufacturing company from 201
 - Data validation using My SQL queries [SQL Queries](https://github.com/SushantKG/Customer-Sales-Insights/blob/main/MySQL%20Queries.sql)
 - Refer to Schema [Schema](Schema.png)
 
+![Schema](https://github.com/SushantKG/Customer-Sales-Insights/assets/152982735/bb7ecd70-a7cf-4520-b666-0ac1784de375)
+
 ## Tools
 
 - MY SQL - For QA testing, Data profiling and Data Validation
