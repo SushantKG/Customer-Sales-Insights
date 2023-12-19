@@ -11,8 +11,9 @@ This project gives sales insights into a hardware manufacturing company from 201
 - import the dataset to my SQL workbench
 - Perform QA testing and Data Profiling
 - Import this SQL database in Power BI
-- Use power Queries to build KPIs and Create an insightful interactive dashboard
-- Data validation using My SQL queries
+- Use power Queries to build KPIs and Create an insightful interactive dashboard [interactive Dashboard](https://github.com/SushantKG/Customer-Sales-Insights/blob/main/Power%20BI%20Interactive%20Dashboard.pbix)
+- Data validation using My SQL queries [SQL Queries](https://github.com/SushantKG/Customer-Sales-Insights/blob/main/MySQL%20Queries.sql)
+- Refer to Schema [Schema](Schema.png)
 
 ## Tools
 
