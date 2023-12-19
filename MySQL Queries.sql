@@ -1,7 +1,7 @@
 
 -- Create a database named "sales" 
--- Import all the required csv files to this database as tables
--- check all the columns
+-- Import all the required CSV files to this database as tables
+-- Check all the columns
 -- Now we will conduct exploratory data analysis (EDA) by answering some questions 
 -----------------------------------------------------------------------------------------------
 
